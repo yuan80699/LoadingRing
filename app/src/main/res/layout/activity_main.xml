@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/cn.com.loadingring"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF">
+
+	<cn.com.loadingring.view.LoadingRingView
+	    android:id="@+id/loadingRingView1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    app:radius="100dp"
+        app:ringWidth="3dp"
+        app:pointerWidth="1dp"
+        app:backgroundColor="#000000"
+        app:ringColor="#FFFFFF"
+        app:pointerColor="#808080"
+	    app:speed="50"
+        app:running="true" />
+
+	<cn.com.loadingring.view.LoadingRingView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/loadingRingView1" />
+</RelativeLayout>
